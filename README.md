@@ -34,25 +34,25 @@ Research in computer vision has demonstrated that deep learning can identify and
 
 The following research findings provide the theoretical background for this project.
 
-### 3.1 Deep Learning for Object Detection
+###  Deep Learning for Object Detection
 
 Convolutional neural networks learn visual features from image data. These features can help a model distinguish between objects based on their appearance, shape, and surrounding visual information.
 
 **Relevance to the project:** A trained object detection model can potentially identify products or other relevant objects in shelf images.
 
-### 3.2 YOLO-Based Object Detection
+###  YOLO-Based Object Detection
 
 The You Only Look Once (YOLO) approach performs object detection in a single network evaluation, enabling efficient predictions. Modern YOLO implementations are widely used in real-time computer vision applications.
 
 **Relevance to the project:** A YOLO-based model is a suitable candidate when both object localisation and reasonably fast inference are required.
 
-### 3.3 Dataset Quality and Generalisation
+###  Dataset Quality and Generalisation
 
 A model's performance depends on the quality, quantity, diversity, and labelling accuracy of its training data. Evaluation on data not used for training helps estimate how well the model generalises to unseen examples.
 
 **Relevance to the project:** Careful data preparation and separate training, validation, and testing datasets are important for reliable evaluation.
 
-### 3.4 Research Summary
+###  Research Summary
 
 The research background suggests that an effective shelf-monitoring system requires:
 
@@ -85,16 +85,7 @@ https://universe.roboflow.com/.
 
 The model's performance depends on the dataset used to train and evaluate it.
 
-| Dataset detail    | Project information                          |
-| ----------------- | -------------------------------------------- |
-| Dataset name      | [Enter actual dataset name]                  |
-| Data source       | [Enter source or download link]              |
-| Data type         | Images and object annotations, if applicable |
-| Number of images  | [Enter actual image count]                   |
-| Object classes    | [List actual classes]                        |
-| Annotation format | [Enter actual format]                        |
-
-### 5.1 Data Preparation
+###  Data Preparation
 
 The data preparation process should document the steps actually performed:
 
@@ -109,15 +100,15 @@ The data preparation process should document the steps actually performed:
 
 | Subset     | Percentage | Purpose                                    |
 | ---------- | ---------: | ------------------------------------------ |
-| Training   | [Actual %] | Used to learn model parameters             |
-| Validation | [Actual %] | Used to monitor training and tune settings |
-| Testing    | [Actual %] | Used for final evaluation                  |
+| Training   | [50 %] | Used to learn model parameters             |
+| Validation | [25 %] | Used to monitor training and tune settings |
+| Testing    | [25 %] | Used for final evaluation                  |
 
 The percentages and image counts must match the actual dataset split used in the experiment.
 
 ## 🧠 6. Model Architecture
 
-**Model used:** [Enter the exact model name and version from the code]
+**Model used:** 
 
 If the implementation uses Ultralytics YOLO, document the precise model variant, such as the relevant YOLOv8 model size, rather than describing all YOLO variants as interchangeable.
 
@@ -138,20 +129,6 @@ The suitability of the chosen architecture should ultimately be assessed using t
 
 ## ⚙️ 7. Model Training Configuration
 
-Record the actual parameters from the training script or saved training configuration.
-
-| Parameter                      | Actual value                  |
-| ------------------------------ | ----------------------------- |
-| Model architecture and weights | [Enter value]                 |
-| Number of epochs               | [Enter value]                 |
-| Image size                     | [Enter value]                 |
-| Batch size                     | [Enter value]                 |
-| Optimiser                      | [Enter value]                 |
-| Learning rate                  | [Enter value]                 |
-| Confidence threshold           | [Enter value]                 |
-| Data augmentation              | [Enter techniques used]       |
-| Hardware                       | [Enter CPU/GPU, if known]     |
-| Training framework             | [Enter framework and version] |
 
 ### Training Techniques
 
@@ -168,7 +145,7 @@ Do not list a technique as implemented unless it is supported by the training co
 
 The trained model should be evaluated on an independent test set to measure how well it detects objects in images it has not seen during training.
 
-### 8.1 Evaluation Metrics
+###  Evaluation Metrics
 
 | Metric         | Meaning                                                                              |
 | -------------- | ------------------------------------------------------------------------------------ |
@@ -178,22 +155,9 @@ The trained model should be evaluated on an independent test set to measure how 
 | mAP\@0.50:0.95 | Mean average precision averaged over IoU thresholds from 0.50 to 0.95                |
 | Inference time | Time taken to produce predictions for an input, measured under documented conditions |
 
-**Accuracy note:** For object detection, precision, recall, and mAP are generally more informative than a single classification accuracy percentage. Report classification accuracy only if the task and evaluation procedure make that metric appropriate.
 
-### 8.2 Experimental Results
 
-| Metric                 |                    Measured result |
-| ---------------------- | ---------------------------------: |
-| Precision              |                    [Actual result] |
-| Recall                 |                    [Actual result] |
-| mAP\@0.50              |                    [Actual result] |
-| mAP\@0.50:0.95         |                    [Actual result] |
-| Test images evaluated  |                     [Actual count] |
-| Average inference time | [Actual measurement, if available] |
-
-Results should be copied from the actual evaluation output. Specify whether values are expressed as percentages or decimals.
-
-### 8.3 Results Analysis
+### Results Analysis
 
 After evaluation, discuss:
 
@@ -204,30 +168,6 @@ After evaluation, discuss:
 - Whether the model was sufficiently fast for the intended application.
 
 The final analysis should be based on measured results and observed predictions, not assumed performance.
-
-## 🖥️ 9. Application and Demo Screenshots
-
-Screenshots should show the actual running application and its outputs.
-
-### 9.1 Main Dashboard
-
-
-
-*Figure 1: Main application dashboard.*
-
-### 9.2 Image Upload and Detection
-
-
-
-*Figure 2: Example input image and model predictions.*
-
-### 9.3 Model Results
-
-
-
-*Figure 3: Example results or performance visualisation.*
-
-**Screenshot instructions:** Create a `screenshots` folder in your repository and save your real screenshots using the filenames shown above. If a screen does not exist in your application, remove that subsection rather than using a placeholder image.
 
 ## 🚀 10. Installation and Execution
 
