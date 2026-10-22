@@ -4,6 +4,8 @@
 Built for RetailSense AI Solutions Pvt. Ltd. — detects products on a shelf image,
 counts them per category, and flags stock status (Out of Stock / Low Stock / In Stock).
 
+Streamlit Link:https://1000410harinipriyakarthikeyansmartshelfai-y4mjfjehgpqjbahifxct.streamlit.app/
+
 ## 1. Problem Definition
 
 - **Input:** A shelf image
